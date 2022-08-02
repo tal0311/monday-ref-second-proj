@@ -1,0 +1,66 @@
+.task-location{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-inline-start: 4px;
+    background-color: inherit;
+
+    &:focus-within{
+        border: 1px solid #0073ea;
+    }
+
+    .input-container{
+        height: 80%;
+        width: 95%;
+        position: relative;
+        &:hover{
+            border: 1px solid #c3c6d4;
+        }
+
+        input.location-input{
+            border: none;
+            outline: none;
+            width: 83%;
+            position: absolute;
+            right: 0;
+            margin-right: 2px;
+            background-color: inherit;
+            height: 80%;
+            top: 3px;
+            text-overflow: ellipsis;
+
+    
+            &:hover {
+                box-shadow: 0 0 0 1px var(--el-input-hover-border-color) inset !important;
+            
+            } 
+
+            &:focus-visible{
+                background-color: #fff;
+                border: 1px solid #c3c6d4;
+            }
+        }
+
+        .icon-v2-line-location{
+            cursor: text;
+
+            &:before {
+                content: "\f35a";
+                font-family: "dapulse";
+                position: absolute;
+                top: 4px;
+                left: 5px;
+                font-size: 12px;
+            }
+
+            &:hover{
+                color: #0073ea;
+            }
+        }
+    }
+}
+
+
